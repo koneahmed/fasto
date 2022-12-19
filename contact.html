@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://https://demo.themesberg.com/landwind/" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landwind - Tailwind CSS Landing Page Demo</title>
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Landwind - Tailwind CSS Landing Page">
+    <meta name="description"
+        content="Get started with a free and open-source landing page built with Tailwind CSS and the Flowbite component library.">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Themesberg">
+
+    <!-- Social media share -->
+    <meta property="og:title" content="Landwind - Tailwind CSS Landing Page">
+    <meta property="og:site_name" content="Themesberg">
+    <meta property="og:url" content="https://https://demo.themesberg.com/landwind/">
+    <meta property="og:description"
+        content="Get started with a free and open-source landing page for Tailwind CSS built with the Flowbite component library featuring dark mode, hero sections, pricing cards, and more.">
+    <meta property="og:type" content="">
+    <meta property="og:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/og-image.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@themesberg" />
+    <meta name="twitter:creator" content="@themesberg" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./output.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+    <header class="fixed w-full">
+        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="./images/logo.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <!-- <div class="hidden mt-2 mr-4 sm:inline-block">
+                        <a class="github-button" href="https://github.com/themesberg/landwind" data-size="large"
+                            data-icon="octicon-star" data-show-count="true"
+                            aria-label="Star themesberg/landwind on GitHub">Star</a>
+                    </div> -->
+
+                    <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
+                    <!-- <a href="https://themesberg.com/product/tailwind-css/landing-page"
+                        class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a> -->
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-2" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="credit-bail.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Qu'est
+                                ce que le crédit-bail ?</a>
+                        </li>
+                        <li>
+                            <a href="faq.html"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Start block -->
+
+ <section class="bg-white dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-1 lg:pt-28">
+
+
+
+        <!-- Row -->
+        <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+            <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+
+                <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+                    <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+                        Contact
+                    </h1>
+                    <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+                        Vous pouvez cliquez <a href="#">Ici</a> pour être rappeler
+                    </p>
+
+                    <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                            Angré Djorobite Rond Point Cité SIR en bas Îlot 253 BIS Villa Lot 2446, Abidjan-Côte d’Ivoire
+                        </div>
+                    </div>
+
+                    <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                            (+225) 07 08 06 48 48
+                        </div>
+                    </div>
+
+                    <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                            client@fasto.com
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+                <iframe class=" w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=5.393887042999268,-3.924990177154541&z=17&hl=en&output=embed">
+                </iframe>
+        </div>
+
+    </div>
+</section>
+<!-- End block -->
+<footer class="bg-white dark:bg-gray-800">
+    <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-3">
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">                    FASTO est votre courtier pour le financement de votre équipement en Cote d’Ivoire.
+                </h3>
+
+
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">                    Liens utiles
+                </h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Accueil</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Crédit-bail ?</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="twitter.com/fasto225" class="hover:underline">Nos Actualités</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Politique de confidentialité</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contactez-nous</h3>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">(+225) 07 08 06 48 48</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">client@fasto.com</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+
+</html>
